@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+.title {
+	font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+	text-align: center;
+	padding-top: 30px;
+}
+
+main {
+	font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	background: #fff;
+}
+
+.mainbox {
+	position: relative;
+	width: 500px;
+	height: 500px;
+}
+
+.box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border-radius: 50%;
+	border: 10px solid #C95700;
+	overflow: hidden;
+	transition: all ease 5s;
+}
+
+.box2 {
+	width: 100%;
+	height: 100%;
+	transform: rotate(-135deg);
+}
+
+span {
+	width: 50%;
+	height: 50%;
+	display: inline-block;
+	position: absolute;
+}
+
+.span1 {
+	clip-path: polygon(0 100%, 100% 50%, 0 0%);
+	;
+	background-color: #6C4A84;
+	top: 120px;
+	left: 0;
+}
+
+.span2 {
+	clip-path: polygon(100% 100%, 0 50%, 100% 0%);
+	;
+	background-color: #DD8500;
+	top: 120px;
+	right: 0;
+}
+
+.span3 {
+	clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+	;
+	background-color: #A81815;
+	bottom: 0;
+	left: 120px;
+}
+
+.span4 {
+	clip-path: polygon(50% 100%, 100% 0%, 0% 0);
+	;
+	background-color: #094077;
+	top: 0;
+	left: 120px;
+}
+
+span b {
+	width: 65px;
+	height: 65px;
+	font-size: 20px;
+	line-height: 65px;
+	border-radius: 50%;
+	background-color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: inset 0;
+}
+
+.spin {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	border: 4px solid #000;
+	background-color: #fff;
+	color: #000;
+	box-shadow: 0 5px 20px #000;
+	font-size: 22px;
+	cursor: pointer;
+
+}
+
+.spin:active {
+	width: 70px;
+	height: 70px;
+	font-size: 20px;
+}
